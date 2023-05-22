@@ -1,0 +1,52 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
+
+:root {
+  /*
+Colors
+*/
+
+  /*
+Primary colors
+*/
+  --sedan-background-color: hsl(31, 77%, 52%);
+  --suv-background-color: hsl(184, 100%, 22%);
+  --luxury-background-color: hsl(179, 100%, 13%);
+
+  /*
+Neutral colors
+*/
+  --para-color: hsla(0, 0%, 100%, 0.75);
+  --heading-color: hsl(0, 0%, 95%);
+
+  /*
+Typography
+*/
+
+  /*
+Font size
+*/
+  --font-size: 0.9375rem;
+
+  /*
+Font families and weights
+*/
+  --font-family-para-text: "Lexend Deca", sans-serif;
+  --weight-400: 400;
+
+  --font-family-heading: "Big Shoulders Display", cursive;
+  --weight-700: 700;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  display: block;
+}
+
+a {
+  text-decoration: none;
+}
