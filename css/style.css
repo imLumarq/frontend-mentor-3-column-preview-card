@@ -15,8 +15,8 @@ Primary colors
   /*
 Neutral colors
 */
-  --para-color: hsla(0, 0%, 100%, 0.75);
-  --heading-color: hsl(0, 0%, 95%);
+  --para-text-color: hsla(0, 0%, 100%, 0.75);
+  --main-color: hsl(0, 0%, 95%);
 
   /*
 Typography
@@ -30,23 +30,132 @@ Font size
   /*
 Font families and weights
 */
-  --font-family-para-text: "Lexend Deca", sans-serif;
+  --para-text-font-family: "Lexend Deca", sans-serif;
   --weight-400: 400;
 
-  --font-family-heading: "Big Shoulders Display", cursive;
+  --heading-font-family: "Big Shoulders Display", cursive;
   --weight-700: 700;
 }
 
 * {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
 
-img {
-  display: block;
+html {
+  color-scheme: light only;
+}
+
+html,
+body {
+  background-color: var(--main-color);
+  min-height: 100vh;
+}
+
+body {
+  align-items: center;
+  display: flex;
+  font-size: var(--font-size);
+  justify-content: center;
+  padding: 10% 0;
+}
+
+main {
+  border-radius: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  width: 80vw;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  gap: 2.5rem;
+  justify-content: space-between;
+  padding: 2rem;
+}
+
+h1 {
+  color: var(--main-color);
+  font-family: var(--heading-font-family);
+  font-size: xx-large;
+}
+
+p {
+  color: var(--para-text-color);
+  font-family: var(--para-text-font-family);
 }
 
 a {
+  background-color: var(--main-color);
+  border-radius: 2rem;
+  padding: 1rem;
+  text-align: center;
   text-decoration: none;
+  text-transform: capitalize;
+  width: 60%;
+}
+
+h1,
+span {
+  text-transform: uppercase;
+}
+
+p,
+a {
+  font-family: var(--para-text-font-family);
+}
+
+.sedans {
+  background-color: var(--sedan-background-color);
+}
+.sedans > a {
+  color: var(--sedan-background-color);
+}
+
+.suvs {
+  background-color: var(--suv-background-color);
+}
+.suvs > a {
+  color: var(--suv-background-color);
+}
+
+.luxury {
+  background-color: var(--luxury-background-color);
+}
+.luxury > a {
+  color: var(--luxury-background-color);
+}
+
+a:hover {
+  background-color: transparent;
+  color: var(--main-color);
+  outline: 1px solid var(--main-color);
+  transition: 0.5s ease-in-out;
+}
+
+@media (max-width: 23.375em) {
+  a {
+    width: 100%;
+  }
+}
+
+@media (min-width: 50em) {
+  main {
+    flex-direction: row;
+    width: 60%;
+  }
+
+  a {
+    width: 100%;
+  }
+}
+
+@media (min-width: 79.8125em) {
+  a {
+    width: 60%;
+  }
 }
