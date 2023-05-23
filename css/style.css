@@ -36,12 +36,13 @@ html {
 }
 
 html,
-body {
+body,
+main {
   background-color: var(--main-color);
   min-height: 100vh;
 }
 
-body {
+main {
   align-items: center;
   display: flex;
   font-size: var(--font-size);
@@ -49,7 +50,7 @@ body {
   padding: 10% 0;
 }
 
-main {
+.wrapper {
   border-radius: 0.5rem;
   display: flex;
   flex-direction: column;
@@ -138,7 +139,7 @@ a:hover {
 
 /*700px*/
 @media (min-width: 43.75em) {
-  main {
+  .wrapper {
     flex-direction: row;
     width: 80%;
   }
@@ -154,7 +155,7 @@ a:hover {
 
 /*1277px*/
 @media (min-width: 79.8125em) {
-  main {
+  .wrapper {
     width: 60%;
   }
 
@@ -165,7 +166,7 @@ a:hover {
 
 /*1441px*/
 @media (min-width: 90.0625em) {
-  main {
+  .wrapper {
     height: 408px;
     width: 864px;
   }
