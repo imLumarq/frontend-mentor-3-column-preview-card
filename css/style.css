@@ -1,35 +1,23 @@
 @import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
 
 :root {
-  /*
-Colors
-*/
+  /* Colors */
 
-  /*
-Primary colors
-*/
+  /* Primary colors */
   --sedan-background-color: hsl(31, 77%, 52%);
   --suv-background-color: hsl(184, 100%, 22%);
   --luxury-background-color: hsl(179, 100%, 13%);
 
-  /*
-Neutral colors
-*/
+  /* Neutral colors */
   --para-text-color: hsla(0, 0%, 100%, 0.75);
   --main-color: hsl(0, 0%, 95%);
 
-  /*
-Typography
-*/
+  /* Typography */
 
-  /*
-Font size
-*/
+  /* Font size */
   --font-size: 0.9375rem;
 
-  /*
-Font families and weights
-*/
+  /* Font families and weights */
   --para-text-font-family: "Lexend Deca", sans-serif;
   --weight-400: 400;
 
@@ -66,7 +54,7 @@ main {
   display: flex;
   flex-direction: column;
   overflow: hidden;
-  width: 80vw;
+  width: 80%;
 }
 
 section {
@@ -74,7 +62,6 @@ section {
   flex-direction: column;
   flex: 1;
   gap: 2.5rem;
-  justify-content: space-between;
   padding: 2rem;
 }
 
@@ -82,11 +69,12 @@ h1 {
   color: var(--main-color);
   font-family: var(--heading-font-family);
   font-size: xx-large;
+  font-weight: var(--weight-700);
 }
 
 p {
   color: var(--para-text-color);
-  font-family: var(--para-text-font-family);
+  flex: 1;
 }
 
 a {
@@ -107,26 +95,30 @@ span {
 p,
 a {
   font-family: var(--para-text-font-family);
+  font-weight: var(--weight-400);
 }
 
 .sedans {
   background-color: var(--sedan-background-color);
 }
-.sedans > a {
+
+.sedans a {
   color: var(--sedan-background-color);
 }
 
 .suvs {
   background-color: var(--suv-background-color);
 }
-.suvs > a {
+
+.suvs a {
   color: var(--suv-background-color);
 }
 
 .luxury {
   background-color: var(--luxury-background-color);
 }
-.luxury > a {
+
+.luxury a {
   color: var(--luxury-background-color);
 }
 
@@ -137,16 +129,22 @@ a:hover {
   transition: 0.5s ease-in-out;
 }
 
+/*374px*/
 @media (max-width: 23.375em) {
   a {
     width: 100%;
   }
 }
 
-@media (min-width: 50em) {
+/*700px*/
+@media (min-width: 43.75em) {
   main {
     flex-direction: row;
-    width: 60%;
+    width: 80%;
+  }
+
+  section {
+    padding: 2rem 2.4rem;
   }
 
   a {
@@ -154,8 +152,21 @@ a:hover {
   }
 }
 
+/*1277px*/
 @media (min-width: 79.8125em) {
-  a {
+  main {
     width: 60%;
+  }
+
+  a {
+    width: 80%;
+  }
+}
+
+/*1441px*/
+@media (min-width: 90.0625em) {
+  main {
+    height: 408px;
+    width: 864px;
   }
 }
