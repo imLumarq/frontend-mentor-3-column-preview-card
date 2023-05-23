@@ -36,8 +36,9 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: (https://www.frontendmentor.io/solutions/3-column-preview-card-noPYB_HrJ3)
 - Live Site URL: (https://imlumarq.github.io/frontend-mentor-3-column-preview-card)
+- Github Repository: (https://github.com/imLumarq/frontend-mentor-3-column-preview-card)
 
 ## My process
 
